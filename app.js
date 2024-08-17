@@ -21,8 +21,8 @@ const User = require("./models/user.js");
 
 
 
-const googleRoute = require("./routes/google.js");
-const facebookRoute = require("./routes/facebook.js");
+// const googleRoute = require("./routes/google.js");
+// const facebookRoute = require("./routes/facebook.js");
 
 
 const { required } = require("joi");
@@ -118,8 +118,8 @@ app.use((req,res,next) => {
 //    res.send(registeredUser);
 // });
 
-app.use("/auth/google", googleRoute);
-app.use("/auth/facebook", facebookRoute);
+// app.use("/auth/google", googleRoute);
+// app.use("/auth/facebook", facebookRoute);
 
 app.use("/listings",listingRouter)
 app.use("/listings/:id/reviews", reviewRouter);
